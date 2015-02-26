@@ -18,7 +18,7 @@ rankhospital <- function (state, outcome, num ="best") { # state is a 2 characte
      # View (subset_state)
       sorted_data <- subset_state[order(subset_state[,out_col],subset_state[,2]),] #sort data accroding to rank and then alphabetically
       sorted_data <- na.omit(sorted_data)
-      #View (sorted_data)
+
       
        if (num =="'best") {
          num <- 1

@@ -20,7 +20,6 @@ rankall <- function (outcome, num ="best") {
     rord <- "TRUE"
   } 
   
-  #Find number of unique states
   states <- unique(data$State,na.omit=T)
   
   for (i in 1:length(states)){

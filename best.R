@@ -11,7 +11,7 @@ best <- function (state, outcome) { # state is a 2 character abbreviation, # out
   if (outcome == "pneumonia") {out_col <- 23} 
     
       if (any(state_names == state)) { #check if state is valid
-        if (any(outcome_names == outcome)) {  ##check if outcome is valid 
+        if (any(outcome_names == outcome)) {  
                   
                   subset_state <- subset (data, data$State == state) #Get only data correspinding to that state
                   subset_state[,out_col] <- suppressWarnings (as.numeric (subset_state[,out_col])) #convert ranking data to numeric & supress warnings
